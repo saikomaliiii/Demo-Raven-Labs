@@ -90,28 +90,61 @@ while delivering exceptional user experiences.
 </ul>
   </div>
 
-  <div class="right">
-  <h2>Get Your Free Assessment</h2>
+  <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style='background-color: white;color: black;max-width: 600px;'>
 
-  <form action="https://crm.zoho.com/crm/WebToLeadForm" method="POST">
+<form id='webform6976070000010300182' action='https://crm.zoho.com/crm/WebToLeadForm' name='WebToLeads6976070000010300182' method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory6976070000010300182()' accept-charset='UTF-8'>
 
-    <!-- Required hidden Zoho fields -->
-    <input type="hidden" name="xnQsjsdp" value="db2260206803ef1fcd9d785a46fc8fa659cb2133248b9c1e89c86f2e33380ce9">
-    <input type="hidden" name="xmIwtLD" value="39705568a4585faf029739a304113435be3db4a44cf0994eb1c1021a14dc2e53a731774f055adecc1c6e28cbda88206e">
-    <input type="hidden" name="actionType" value="TGVhZHM=">
+<input type='text' style='display:none;' name='xnQsjsdp' value='db2260206803ef1fcd9d785a46fc8fa659cb2133248b9c1e89c86f2e33380ce9'>
+<input type='hidden' name='zc_gad' id='zc_gad' value=''>
+<input type='text' style='display:none;' name='xmIwtLD' value='39705568a4585faf029739a304113435be3db4a44cf0994eb1c1021a14dc2e53a731774f055adecc1c6e28cbda88206e'>
+<input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
 
-    <!-- 🔥 THIS IS YOUR SERVICE FIELD -->
-    <input type="hidden" name="Service" value="Healthcare">
+<!-- 🔥 ADDED SERVICE FIELD -->
+<input type="hidden" name="Service" value="Healthcare">
 
-    <!-- User fields -->
-    <input name="First Name" placeholder="Full Name">
-    <input name="Email" placeholder="Email">
-    <input name="Phone" placeholder="Phone">
-    <textarea name="Description" placeholder="Your requirement"></textarea>
+<div class='zcwf_row'>
+  <div class='zcwf_col_lab'><label>First Name</label></div>
+  <div class='zcwf_col_fld'><input type='text' name='First Name'></div>
+</div>
 
-    <button type="submit">Submit</button>
+<div class='zcwf_row'>
+  <div class='zcwf_col_lab'><label>Last Name *</label></div>
+  <div class='zcwf_col_fld'><input type='text' name='Last Name' required></div>
+</div>
 
-  </form>
+<div class='zcwf_row'>
+  <div class='zcwf_col_lab'><label>Email</label></div>
+  <div class='zcwf_col_fld'><input type='text' name='Email'></div>
+</div>
+
+<div class='zcwf_row'>
+  <div class='zcwf_col_lab'><label>Phone</label></div>
+  <div class='zcwf_col_fld'><input type='text' name='Phone'></div>
+</div>
+
+<div class='zcwf_row'>
+  <div class='zcwf_col_lab'><label>Company *</label></div>
+  <div class='zcwf_col_fld'><input type='text' name='Company' required></div>
+</div>
+
+<div class='zcwf_row'>
+  <div class='zcwf_col_lab'><label>Country</label></div>
+  <div class='zcwf_col_fld'><input type='text' name='Country'></div>
+</div>
+
+<div class='zcwf_row'>
+  <div class='zcwf_col_lab'><label>Zip Code</label></div>
+  <div class='zcwf_col_fld'><input type='text' name='Zip Code'></div>
+</div>
+
+<div class='zcwf_row'>
+  <div class='zcwf_col_lab'></div>
+  <div class='zcwf_col_fld'>
+    <input type='submit' class='formsubmit zcwf_button' value='Submit'>
+  </div>
+</div>
+
+</form>
 </div>
   </div>
 </section>
