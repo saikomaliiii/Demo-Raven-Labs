@@ -5,6 +5,9 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
+
+
+
 <body>
 
 <!-- NAVBAR -->
@@ -18,13 +21,13 @@
   <li><a href="#" class="active">Home</a></li>
 
   <li class="dropdown">
-    <a href="#">Services</a>
+    <a href="#" onclick="toggleDropdown(event)">Services</a>
     <ul class="dropdown-menu">
-      <li><a href="#">Healthcare</a></li>
-      <li><a href="#">Manufacturing</a></li>
-      <li><a href="#">Law Firms</a></li>
-      <li><a href="#">E-Commerce</a></li>
-      <li><a href="#">Kitchen Equipment</a></li>
+      <li><a href="healthcare.html">Healthcare</a></li>
+<li><a href="manufacturing.html">Manufacturing</a></li>
+<li><a href="lawfirms.html">Law Firms</a></li>
+<li><a href="ecommerce.html">E-Commerce</a></li>
+<li><a href="kitchen.html">Kitchen Equipment</a></li>
     </ul>
   </li>
 
@@ -62,48 +65,7 @@
 
 </section>
 
-<!-- SERVICES -->
-<section>
-  <h2>Our Services</h2>
-  <div class="cards">
-    <div class="card">AI Integration</div>
-    <div class="card">CRM & ERP</div>
-    <div class="card">Web Development</div>
-  </div>
-</section>
 
-<!-- STATS -->
-<section class="stats">
-  <div><h2>300+</h2><p>Projects</p></div>
-  <div><h2>200+</h2><p>Clients</p></div>
-  <div><h2>9+</h2><p>Years</p></div>
-</section>
-
-<!-- CAPABILITIES -->
-<section>
-  <h2>Our Capabilities</h2>
-  <div class="cards">
-    <div class="card">Business Intelligence</div>
-    <div class="card">Automation</div>
-    <div class="card">Digital Marketing</div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta">
-  <h2>Maximize Your Business Potential</h2>
-  <button>Let’s Chat</button>
-</section>
-
-<!-- CONTACT -->
-<section>
-  <h2>Get In Touch</h2>
-  <form action="YOUR_ZOHO_FORM_LINK" method="POST">
-    <input type="text" name="Name" placeholder="Name" required>
-    <input type="email" name="Email" placeholder="Email" required>
-    <button type="submit">Submit</button>
-  </form>
-</section>
 
 <!-- FOOTER -->
 <footer>
@@ -111,5 +73,11 @@
   <p>info@ravenlabs.com.au</p>
 </footer>
 
+<script id="dropdownjs">
+function toggleDropdown(event) {
+  event.preventDefault();
+  document.querySelector('.dropdown').classList.toggle('active');
+}
+</script>
 </body>
 </html>
