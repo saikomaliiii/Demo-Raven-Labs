@@ -241,9 +241,6 @@ button {
   color: #cbd5f5;
 }
 
-.form-section {
-  padding: 80px 20px;
-}
 
 .hero2 {
   background: linear-gradient(135deg,#6d28d9,#7c3aed);
@@ -466,60 +463,7 @@ button {
   color: #111;   /* override white text */
 }
 
-/* 🔥 Zoho Form Clean Styling */
 
-#crmWebToEntityForm {
-  background: transparent !important;
-  max-width: 100% !important;
-  padding: 0 !important;
-}
-
-.zcwf_title {
-  display: none; /* remove ugly title */
-}
-
-.zcwf_row {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-
-.zcwf_col_lab {
-  display: none; /* hide labels */
-}
-
-.zcwf_col_fld input,
-.zcwf_col_fld textarea {
-  width: 100% !important;
-  padding: 15px;
-  border-radius: 12px;
-  border: 1px solid #ddd;
-  font-size: 16px;
-  outline: none;
-}
-
-/* textarea */
-.zcwf_col_fld textarea {
-  height: 120px;
-  resize: none;
-}
-
-/* submit button */
-.formsubmit {
-  width: 100%;
-  background: linear-gradient(90deg, #ff7a18, #ffb347);
-  border: none;
-  padding: 15px;
-  border-radius: 30px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.formsubmit:hover {
-  transform: scale(1.02);
-}
 
 select {
   width: 100%;
