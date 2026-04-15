@@ -475,3 +475,34 @@ select {
   background: #fff;
   color: #333;
 }
+
+.zcwf_lblLeft .zcwf_col_fld input,
+.zcwf_lblLeft .zcwf_col_fld_slt {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #f2f2f2;
+}
+
+.zcwf_lblLeft .zcwf_col_lab {
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.zcwf_lblLeft .zcwf_col_fld {
+  width: 100%;
+}
+
+.zcwf_lblLeft .zcwf_row {
+  margin-bottom: 20px;
+}
+
+.formsubmit.zcwf_button {
+  width: 100%;
+  border-radius: 25px;
+  padding: 12px;
+  background: black;
+  color: white;
+}
