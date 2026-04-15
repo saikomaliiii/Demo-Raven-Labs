@@ -53,20 +53,20 @@
    - The Mandatory check script can modified as to suit your business needs. 
    - It is important that you test the modified form before going live.-->
 				<div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'
-					style='background-color: &#x23;6A00FF;color: black;max-width: 600px;'>
+					style='background-color: &#x23;6D28D9;color: black;max-width: 600px;'>
 					<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 					<META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
-					<form id='webform6976070000010324283' action='https://crm.zoho.com/crm/WebToLeadForm'
-						name=WebToLeads6976070000010324283 method='POST'
-						onSubmit='javascript:document.charset="UTF-8"; return checkMandatory6976070000010324283()'
+					<form id='webform6976070000010324261' action='https://crm.zoho.com/crm/WebToLeadForm'
+						name=WebToLeads6976070000010324261 method='POST'
+						onSubmit='javascript:document.charset="UTF-8"; return checkMandatory6976070000010324261()'
 						accept-charset='UTF-8'>
 						<input type='text' style='display:none;' name='xnQsjsdp'
-							value='c854c3749c6c74b3f8caf7f2820a5bff3ffd6c57506852c9742dbb9e676edbe7'>
+							value='ded26d620f0d08291c38399e5adf9ae8a5331cbb74f801f904240effe1636974'>
 						</input>
 						<input type='hidden' name='zc_gad' id='zc_gad' value=''>
 						</input>
 						<input type='text' style='display:none;' name='xmIwtLD'
-							value='6f72287e52267f3965bd79e8a8f0a73358a8cd9c1a7f332604e2322c8fde583393751c15a5dafdf13ec158bee1457074'>
+							value='5418f3f85986c595cde77242791a263d8151446a52056ff38bd53e0c7add8aae8c6c486f9a24e32979b89dd38c9a8958'>
 						</input>
 						<input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
 						</input>
@@ -332,30 +332,16 @@
 						</div>
 						<div class='zcwf_row'>
 							<div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
-								<label for='Company'>Company
-									<span style='color:red;'>*</span>
-								</label>
-							</div>
-							<div class='zcwf_col_fld'>
-								<input type='text' id='Company' aria-required='true' aria-label='Company' name='Company'
-									aria-valuemax='200' maxlength='200'>
-								</input>
-								<div class='zcwf_col_help'>
-								</div>
-							</div>
-						</div>
-						<div class='zcwf_row wfrm_fld_dpNn'>
-							<div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'>
 								<label for='Industry'>Industry</label>
 							</div>
 							<div class='zcwf_col_fld'>
 								<select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
 									aria-haspopup='listbox' id='Industry'
-									onChange='addAriaSelected6976070000010324283()' aria-required='false'
+									onChange='addAriaSelected6976070000010324261()' aria-required='false'
 									aria-label='Industry' name='Industry'>
 									<option value='-None-'>-None-</option>
 									<option value='General'>General</option>
-									<option selected value='Healthcare'>Healthcare</option>
+									<option value='Healthcare'>Healthcare</option>
 									<option value='Manufacturing'>Manufacturing</option>
 									<option value='Law&#x20;Firms'>Law Firms</option>
 									<option value='E&#x20;-&#x20;Commerce'>E - Commerce</option>
@@ -371,11 +357,11 @@
 							</div>
 							<div class='zcwf_col_fld'>
 								<select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
-									aria-haspopup='listbox' id='LEADCF7' onChange='addAriaSelected6976070000010324283()'
+									aria-haspopup='listbox' id='LEADCF7' onChange='addAriaSelected6976070000010324261()'
 									aria-required='false' aria-label='LEADCF7' name='LEADCF7'>
 									<option value='-None-'>-None-</option>
-									<option value='Home'>Home</option>
-									<option selected value='Healthcare&#x20;Page'>Healthcare Page</option>
+									<option selected value='Home'>Home</option>
+									<option value='Healthcare&#x20;Page'>Healthcare Page</option>
 									<option value='Manufacturing&#x20;Page'>Manufacturing Page</option>
 									<option value='Law&#x20;Firms&#x20;Page'>Law Firms Page</option>
 									<option value='E-&#x20;Commerce&#x20;Page'>E- Commerce Page</option>
@@ -397,7 +383,7 @@
 							</div>
 						</div>
 						<script>
-							function addAriaSelected6976070000010324283() {
+							function addAriaSelected6976070000010324261() {
 								var optionElem = event.target;
 								var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
 								if (previousSelectedOption) {
@@ -405,8 +391,8 @@
 								}
 								optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
 							}
-							function validateEmail6976070000010324283() {
-								var form = document.forms['WebToLeads6976070000010324283'];
+							function validateEmail6976070000010324261() {
+								var form = document.forms['WebToLeads6976070000010324261'];
 								var emailFld = form.querySelectorAll('[ftype=email]');
 								var i;
 								for (i = 0; i < emailFld.length; i++) {
@@ -423,11 +409,11 @@
 								}
 								return true;
 							}
-							function checkMandatory6976070000010324283() {
-								var mndFileds = new Array('Company', 'Last Name');
-								var fldLangVal = new Array('Company', 'Last\x20Name');
+							function checkMandatory6976070000010324261() {
+								var mndFileds = new Array('Last Name');
+								var fldLangVal = new Array('Last\x20Name');
 								for (i = 0; i < mndFileds.length; i++) {
-									var fieldObj = document.forms['WebToLeads6976070000010324283'][mndFileds[i]];
+									var fieldObj = document.forms['WebToLeads6976070000010324261'][mndFileds[i]];
 									if (fieldObj) {
 										if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
 											if (fieldObj.type == 'file') {
@@ -458,12 +444,12 @@
 										} catch (e) { }
 									}
 								}
-								if (!validateEmail6976070000010324283()) {
+								if (!validateEmail6976070000010324261()) {
 									return false;
 								}
 								var urlparams = new URLSearchParams(window.location.search);
 								if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
-									var webform = document.getElementById('webform6976070000010324283');
+									var webform = document.getElementById('webform6976070000010324261');
 									var service = urlparams.get('service');
 									var smarturlfield = document.createElement('input');
 									smarturlfield.setAttribute('type', 'hidden');
@@ -473,7 +459,7 @@
 								}
 								document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
 							}
-							function tooltipShow6976070000010324283(el) {
+							function tooltipShow6976070000010324261(el) {
 								var tooltip = el.nextElementSibling;
 								var tooltipDisplay = tooltip.style.display;
 								if (tooltipDisplay == 'none') {
@@ -489,12 +475,14 @@
 						</script>
 						<!-- Do not remove this --- Analytics Tracking code starts -->
 						<script id='wf_anal'
-							src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=bf8b9c26c411b53dbcb2cc1f328e9338511dbc615b92eab30eff5a7b72168225fa5cb796586f953289855f78a049d3eagid7de0958666ac43d72979f166636ec34a3c23328d141c351669ff4305a626ecd6gid4c9d391b3192896a27a2994a69442dbdb9e9cc77ca83a6d150296ea497e50dd0gid452897a672cacdcf708b09c40851ee4e08e0886f7765913bf3100680c8af1993&tw=7e2911ac6d5fda3af7ff58906e63d686a99689c11d471413e739185faa9411fc'>
+							src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=fd8a2bd17f41a667ed6065bd2ed4ab9f393ca83f27274db654e21f812545953b433ff4692f83cf239a1882c46e03189cgid37d1f0f5b3ff19d4429b3b3267415e417209b7d3695394f0fbef53f3853ebc62gidca1e82658b7fa6b8fcf05abf6cb7bbe6a6792f8526d1a06184f43489670cd6f2gid63dde32d208e303b0140a3524e68e2ca299e3c5c2ab1d7d5fa59d26fe56ed7fc&tw=1f956dd17bcf00b49c62820c890cf015efda39a81b7ce143c6b1092183b66b19'>
 							</script>
 						<!-- Do not remove this --- Analytics Tracking code ends. -->
 					</form>
 				</div>
 			</form>
+		</div>
+		</form>
 		</div>
 		</div>
 
