@@ -484,68 +484,68 @@ select {
   color: #333;
 }
 
-/* Remove white container */
+/* Container */
 #crmWebToEntityForm {
   background: transparent !important;
   padding: 0 !important;
   box-shadow: none !important;
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
 }
 
-/* Hide labels completely */
+/* Hide labels */
 .zcwf_col_lab {
   display: none !important;
 }
 
-/* Fix row spacing */
+/* Row fix */
 .zcwf_row {
-  margin-bottom: 18px !important;
+  display: flex !important;
+  gap: 20px;
+  margin-bottom: 20px !important;
 }
 
-/* Make inputs full width */
-.zcwf_col_fld {
+/* Two column layout */
+.zcwf_row:nth-child(1),
+.zcwf_row:nth-child(2) {
+  display: flex !important;
+}
+
+/* Each field half width */
+.zcwf_row:nth-child(1) .zcwf_col_fld,
+.zcwf_row:nth-child(2) .zcwf_col_fld {
+  width: 50% !important;
+}
+
+/* Remaining fields full width */
+.zcwf_row:nth-child(n+3) .zcwf_col_fld {
   width: 100% !important;
 }
 
-/* Input styling */
+/* Inputs */
 .zcwf_col_fld input,
 .zcwf_col_fld_slt,
 .zcwf_col_fld textarea {
   width: 100% !important;
   padding: 16px !important;
-  border-radius: 30px !important;
+  border-radius: 40px !important;
   border: none !important;
   background: #e6e6e6 !important;
   font-size: 14px;
-  outline: none;
 }
 
-/* Focus effect */
-.zcwf_col_fld input:focus,
-.zcwf_col_fld textarea:focus {
-  box-shadow: 0 0 0 2px #a100ff;
-}
-
-/* Button styling */
+/* Button */
 .formsubmit.zcwf_button {
   display: block;
-  width: 200px;
-  margin: 30px auto 10px auto;
-  padding: 14px;
+  margin: 30px auto;
+  padding: 14px 30px;
   border-radius: 30px;
   background: linear-gradient(135deg, #6a00ff, #a100ff);
   color: white;
   border: none;
-  font-size: 16px;
 }
 
-/* Hide reset button */
+/* Hide reset */
 input[type="reset"] {
-  display: none !important;
-}
-
-/* Remove weird spacing from Zoho */
-.zcwf_col_help {
   display: none !important;
 }
