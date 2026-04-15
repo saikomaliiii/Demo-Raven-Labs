@@ -20,7 +20,7 @@ body {
   padding: 0;
   margin: 0;
   margin-top: 5px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
 
@@ -84,7 +84,8 @@ nav {
   margin-top: 20px;
 }
 
-input, select {
+input,
+select {
   padding: 15px;
   border-radius: 25px;
   border: none;
@@ -127,12 +128,12 @@ section {
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
   padding: 40px;
   width: 240px;
   border-radius: 15px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: 0.3s;
 }
 
@@ -186,7 +187,7 @@ button {
 }
 
 button {
-  box-shadow: 0 10px 30px rgba(255,106,0,0.3);
+  box-shadow: 0 10px 30px rgba(255, 106, 0, 0.3);
 }
 
 /* LINKS */
@@ -224,13 +225,13 @@ button {
 }
 
 .feature-box {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   padding: 30px;
   margin: 20px auto;
   max-width: 600px;
   text-align: left;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .feature-box h3 {
@@ -243,7 +244,7 @@ button {
 
 
 .hero2 {
-  background: linear-gradient(135deg,#6d28d9,#7c3aed);
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
   padding: 120px 80px;
 }
 
@@ -258,13 +259,13 @@ button {
 }
 
 .tag {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   padding: 8px 15px;
   border-radius: 20px;
 }
 
 .badges span {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   padding: 10px;
   margin: 10px;
   display: inline-block;
@@ -279,18 +280,19 @@ button {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 40px;
 }
 
 .box {
-  background: white;              /* 🔥 main change */
+  background: white;
+  /* 🔥 main change */
   padding: 30px;
   border-radius: 15px;
   text-align: left;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
@@ -321,7 +323,7 @@ button {
 }
 
 .hero2 {
-  background: linear-gradient(135deg,#6d28d9,#7c3aed);
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
   padding: 120px 20px;
   display: flex;
   justify-content: center;
@@ -345,15 +347,18 @@ button {
 }
 
 .box h3 {
-  color: #111827;   /* dark text */
+  color: #111827;
+  /* dark text */
 }
 
 .box p {
-  color: #6b7280;   /* grey text */
+  color: #6b7280;
+  /* grey text */
 }
 
 .grid-section {
-  background: #f9fafb;   /* light grey bg like image */
+  background: #f9fafb;
+  /* light grey bg like image */
   padding: 80px;
 }
 
@@ -362,7 +367,8 @@ button {
 }
 
 .grid-section span {
-  color: #6d28d9;   /* purple word */
+  color: #6d28d9;
+  /* purple word */
 }
 
 .split {
@@ -413,7 +419,7 @@ button {
   background: white;
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .right h2 {
@@ -439,12 +445,13 @@ button {
   margin-top: 20px;
   padding: 15px;
   border-radius: 30px;
-  background: linear-gradient(135deg,#f97316,#fb923c);
+  background: linear-gradient(135deg, #f97316, #fb923c);
   color: white;
 }
 
 .left {
-  color: #111;   /* 🔥 force dark text */
+  color: #111;
+  /* 🔥 force dark text */
 }
 
 .left h2 {
@@ -460,7 +467,8 @@ button {
 }
 
 .split {
-  color: #111;   /* override white text */
+  color: #111;
+  /* override white text */
 }
 
 
@@ -532,4 +540,61 @@ select {
 .crmWebToEntityForm {
   max-width: 500px;
   margin: auto;
+}
+
+.zcwf_col_lab {
+  display: none !important;
+}
+
+.zcwf_row {
+  display: flex !important;
+  gap: 20px;
+  margin-bottom: 20px !important;
+}
+
+.zcwf_col_fld {
+  width: 100% !important;
+}
+
+.zcwf_row:nth-child(1),
+.zcwf_row:nth-child(2),
+.zcwf_row:nth-child(3) {
+  display: flex !important;
+}
+
+.zcwf_row:nth-child(1) .zcwf_col_fld,
+.zcwf_row:nth-child(2) .zcwf_col_fld,
+.zcwf_row:nth-child(3) .zcwf_col_fld {
+  width: 50% !important;
+}
+
+.zcwf_col_fld input,
+.zcwf_col_fld_slt,
+.zcwf_col_fld textarea {
+  width: 100% !important;
+  padding: 16px !important;
+  border-radius: 40px !important;
+  border: none !important;
+  background: #e6e6e6 !important;
+  font-size: 14px;
+}
+
+.formsubmit.zcwf_button {
+  display: block;
+  margin: 30px auto;
+  padding: 14px 30px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6a00ff, #a100ff);
+  color: white;
+  border: none;
+}
+
+.formsubmit.zcwf_button {
+  display: block;
+  margin: 30px auto;
+  padding: 14px 30px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6a00ff, #a100ff);
+  color: white;
+  border: none;
 }
