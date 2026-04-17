@@ -48,128 +48,128 @@
 
 			<form>
 				<style>
-body {
-  background: linear-gradient(135deg, #6D28D9, #9333EA);
-  font-family: 'Poppins', sans-serif;
-}
+  body {
+    background: #f5f7fb;
+    font-family: Arial, sans-serif;
+  }
 
-.zf-form-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 2rem;
-  max-width: 500px;
-  margin: 60px auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
+  .zf-form-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 2rem;
+    max-width: 520px;
+    margin: 60px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
 
-.zf-form-card h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 22px;
-  color: #111827;
-}
+  .zf-form-card h2 {
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+    color: #111827;
+  }
 
-.zf-field {
-  margin-bottom: 1.2rem;
-}
+  .zf-field {
+    margin-bottom: 1.2rem;
+  }
 
-.zf-field label {
-  font-size: 13px;
-  font-weight: 600;
-  color: #374151;
-  margin-bottom: 6px;
-  display: block;
-}
+  .zf-field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    display: block;
+  }
 
-.zf-field input,
-.zf-field select {
-  width: 100%;
-  padding: 11px 12px;
-  border-radius: 10px;
-  border: 1px solid #d1d5db;
-  background: #f9fafb;
-  font-size: 14px;
-  transition: all 0.2s ease;
-}
+  .zf-field input,
+  .zf-field select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background: #f9fafb;
+  }
 
-.zf-field input:focus,
-.zf-field select:focus {
-  border-color: #6D28D9;
-  background: #ffffff;
-  box-shadow: 0 0 0 3px rgba(109,40,217,0.15);
-  outline: none;
-}
+  .zf-field input:focus,
+  .zf-field select:focus {
+    border-color: #6D28D9;
+    background: #fff;
+    outline: none;
+  }
 
-.zf-btn-submit {
-  width: 100%;
-  padding: 12px;
-  border-radius: 10px;
-  border: none;
-  background: linear-gradient(135deg, #6D28D9, #7C3AED);
-  color: #fff;
-  font-weight: 600;
-  font-size: 15px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.zf-btn-submit:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 15px rgba(109,40,217,0.3);
-}
+  .zf-btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #6D28D9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+  }
 </style>
 
-<form action="https://crm.zoho.com/crm/WebToLeadForm"
-method="POST"
-onsubmit="return checkMandatory6976070000010324261()">
+<div class="zf-form-card">
+  <h2>Get in touch</h2>
 
-  <!-- 🔴 ORIGINAL ZOHO HIDDEN FIELDS (DO NOT TOUCH) -->
-  <input type="hidden" name="xnQsjsdp" value="8cc4622a40f4c49b814b4470dacf884339a00c8d3895070cfbf33cf2bc52e76c">
-  <input type="hidden" name="xmIwtLD" value="e771c5cc292a270f08e709acd88530eb6a066b8843f259b409f065b93054b154c3e5cee5daa8ef8ed754656fdfe1a726">
-  <input type="hidden" name="actionType" value="TGVhZHM=">
-  <input type="hidden" name="returnURL" value="https://yourwebsite.com/thank-you.html">
-  <input type="hidden" name="zc_gad" value="">
-  <input type="hidden" name="aG9uZXlwb3Q" value="">
+  <form action="https://crm.zoho.com/crm/WebToLeadForm"
+        method="POST"
+        onsubmit="return checkMandatory()">
 
-  <!-- Hidden Source -->
-  <input type="hidden" name="LEADCF7" value="Home">
+    <!-- ZOHO HIDDEN FIELDS -->
+    <input type="hidden" name="xnQsjsdp" value="8cc4622a40f4c49b814b4470dacf884339a00c8d3895070cfbf33cf2bc52e76c">
+    <input type="hidden" name="xmIwtLD" value="e771c5cc292a270f08e709acd88530eb6a066b8843f259b409f065b93054b154c3e5cee5daa8ef8ed754656fdfe1a726">
+    <input type="hidden" name="actionType" value="TGVhZHM=">
+    <input type="hidden" name="zc_gad" value="">
+    <input type="hidden" name="aG9uZXlwb3Q" value="">
+    <input type="hidden" name="LEADCF7" value="Home">
 
-  <div class="zf-field">
-    <label>First Name</label>
-    <input type="text" name="First Name">
-  </div>
+    <div class="zf-field">
+      <label>First Name</label>
+      <input type="text" name="First Name">
+    </div>
 
-  <div class="zf-field">
-    <label>Last Name *</label>
-    <input type="text" name="Last Name" required>
-  </div>
+    <div class="zf-field">
+      <label>Last Name *</label>
+      <input type="text" name="Last Name" required>
+    </div>
 
-  <div class="zf-field">
-    <label>Email</label>
-    <input type="text" name="Email">
-  </div>
+    <div class="zf-field">
+      <label>Email</label>
+      <input type="text" name="Email">
+    </div>
 
-  <div class="zf-field">
-    <label>Phone</label>
-    <input type="text" name="Phone">
-  </div>
+    <div class="zf-field">
+      <label>Phone</label>
+      <input type="text" name="Phone">
+    </div>
 
-  <div class="zf-field">
-    <label>Industry</label>
-    <select name="Industry">
-      <option value="-None-">Select</option>
-      <option value="General">General</option>
-      <option value="Healthcare">Healthcare</option>
-      <option value="Manufacturing">Manufacturing</option>
-      <option value="Law Firms">Law Firms</option>
-      <option value="E - Commerce">E - Commerce</option>
-      <option value="Kitchen Equiptment">Kitchen Equipment</option>
-    </select>
-  </div>
+    <div class="zf-field">
+      <label>Industry</label>
+      <select name="Industry">
+        <option value="-None-">Select your industry</option>
+        <option value="General">General</option>
+        <option value="Healthcare">Healthcare</option>
+        <option value="Manufacturing">Manufacturing</option>
+        <option value="Law Firms">Law Firms</option>
+        <option value="E - Commerce">E - Commerce</option>
+        <option value="Kitchen Equiptment">Kitchen Equipment</option>
+      </select>
+    </div>
 
-  <button type="submit" class="zf-btn-submit">Submit Enquiry</button>
+    <button type="submit" class="zf-btn-submit">Submit Enquiry</button>
+  </form>
+</div>
 
-</form>
+<script>
+function checkMandatory() {
+  var lastName = document.querySelector('[name="Last Name"]');
+  if (!lastName.value.trim()) {
+    alert("Last Name is required");
+    return false;
+  }
+  return true;
+}
+</script>
 
 <script>
 function checkMandatory6976070000010324261() {
