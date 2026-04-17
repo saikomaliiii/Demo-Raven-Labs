@@ -47,133 +47,94 @@
 			<p class="query"><b>Got a query?</b> Kindly fill in the form.</p>
 
 			<form>
-				<!-- Zoho CRM Lead Form — paste this anywhere in your website HTML -->
-<style>
-  .zf-form-card { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 2rem; max-width: 520px; margin: 1.5rem auto; font-family: Arial, sans-serif; box-sizing: border-box; }
-  .zf-form-card * { box-sizing: border-box; }
-  .zf-accent { width: 36px; height: 3px; background: #6D28D9; border-radius: 2px; margin-bottom: 1rem; }
-  .zf-form-card h2 { margin: 0 0 4px; font-size: 20px; font-weight: 600; color: #111827; }
-  .zf-form-card p.zf-sub { margin: 0 0 1.5rem; font-size: 14px; color: #6b7280; }
-  .zf-field { margin-bottom: 1.25rem; }
-  .zf-field label { display: block; font-size: 13px; font-weight: 600; color: #374151; margin-bottom: 6px; }
-  .zf-field label span { color: #ef4444; margin-left: 2px; }
-  .zf-field input[type=text], .zf-field select { width: 100%; padding: 9px 12px; font-size: 14px; border: 1px solid #d1d5db; border-radius: 8px; background: #f9fafb; color: #111827; outline: none; transition: border-color 0.15s, box-shadow 0.15s; appearance: none; -webkit-appearance: none; }
-  .zf-field input[type=text]:focus, .zf-field select:focus { border-color: #6D28D9; box-shadow: 0 0 0 3px rgba(109,40,217,0.12); background: #fff; }
-  .zf-field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; background-color: #f9fafb; padding-right: 32px; }
-  .zf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .zf-btn-submit { width: 100%; padding: 11px; background: #6D28D9; color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 0.5rem; transition: background 0.15s; }
-  .zf-btn-submit:hover { background: #5B21B6; }
-  .zf-btn-reset { width: 100%; padding: 9px; background: transparent; color: #6b7280; border: 1px solid #d1d5db; border-radius: 8px; font-size: 13px; cursor: pointer; margin-top: 8px; transition: background 0.15s; }
-  .zf-btn-reset:hover { background: #f3f4f6; }
-  @media (max-width: 480px) { .zf-row { grid-template-columns: 1fr; } .zf-form-card { padding: 1.25rem; } }
+				<style>
+  .zf-form-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 520px;
+    margin: 1.5rem auto;
+    font-family: Arial, sans-serif;
+  }
+  .zf-field { margin-bottom: 1.2rem; }
+  .zf-field label { font-size: 13px; font-weight: 600; display: block; margin-bottom: 6px; }
+  .zf-field input, .zf-field select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  .zf-btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #6D28D9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
 </style>
 
-<div class="zf-form-card">
-  <div class="zf-accent"></div>
-  <h2>Get in touch</h2>
-  <p class="zf-sub">Fill in your details and we'll get back to you shortly.</p>
+<form action="https://crm.zoho.com/crm/WebToLeadForm"
+method="POST"
+onsubmit="return checkMandatory6976070000010324261()">
 
-  <form id="webform6976070000010324261" action="https://crm.zoho.com/crm/WebToLeadForm" name="WebToLeads6976070000010324261" method="POST" onsubmit="javascript:document.charset='UTF-8'; return checkMandatory6976070000010324261()" accept-charset="UTF-8">
+  <!-- 🔴 ORIGINAL ZOHO HIDDEN FIELDS (DO NOT TOUCH) -->
+  <input type="hidden" name="xnQsjsdp" value="8cc4622a40f4c49b814b4470dacf884339a00c8d3895070cfbf33cf2bc52e76c">
+  <input type="hidden" name="xmIwtLD" value="e771c5cc292a270f08e709acd88530eb6a066b8843f259b409f065b93054b154c3e5cee5daa8ef8ed754656fdfe1a726">
+  <input type="hidden" name="actionType" value="TGVhZHM=">
+  <input type="hidden" name="returnURL" value="https://yourwebsite.com/thank-you.html">
+  <input type="hidden" name="zc_gad" value="">
+  <input type="hidden" name="aG9uZXlwb3Q" value="">
 
-    <!-- Do not remove these hidden fields -->
-    <input type="text" style="display:none;" name="xnQsjsdp" value="dfa534206629fd85b57e1b374f985a4f282f77285b8d33ed7a603dd517b964d3">
-    <input type="hidden" name="zc_gad" id="zc_gad" value="">
-    <input type="text" style="display:none;" name="xmIwtLD" value="0cc22aebd12147b13a1859302b12f1d914b69fac065db10aa1ee193e8c538a9d60c4f8fa900432744ca69172fd6f84a0">
-    <input type="text" style="display:none;" name="actionType" value="TGVhZHM=">
-    <input type="text" style="display:none;" name="returnURL" value="null">
-    <input type="text" style="display:none;" name="aG9uZXlwb3Q" value="">
-    <select style="display:none;" name="LEADCF7" id="LEADCF7">
-      <option value="-None-">-None-</option>
-      <option selected value="Home">Home</option>
-      <option value="Healthcare Page">Healthcare Page</option>
-      <option value="Manufacturing Page">Manufacturing Page</option>
-      <option value="Law Firms Page">Law Firms Page</option>
-      <option value="E- Commerce Page">E- Commerce Page</option>
-      <option value="Kitchen Equiptment Page">Kitchen Equiptment Page</option>
+  <!-- Hidden Source -->
+  <input type="hidden" name="LEADCF7" value="Home">
+
+  <div class="zf-field">
+    <label>First Name</label>
+    <input type="text" name="First Name">
+  </div>
+
+  <div class="zf-field">
+    <label>Last Name *</label>
+    <input type="text" name="Last Name" required>
+  </div>
+
+  <div class="zf-field">
+    <label>Email</label>
+    <input type="text" name="Email">
+  </div>
+
+  <div class="zf-field">
+    <label>Phone</label>
+    <input type="text" name="Phone">
+  </div>
+
+  <div class="zf-field">
+    <label>Industry</label>
+    <select name="Industry">
+      <option value="-None-">Select</option>
+      <option value="General">General</option>
+      <option value="Healthcare">Healthcare</option>
+      <option value="Manufacturing">Manufacturing</option>
+      <option value="Law Firms">Law Firms</option>
+      <option value="E - Commerce">E - Commerce</option>
+      <option value="Kitchen Equiptment">Kitchen Equipment</option>
     </select>
-    <!-- End hidden fields -->
+  </div>
 
-    <div class="zf-row">
-      <div class="zf-field">
-        <label for="First_Name">First name</label>
-        <input type="text" id="First_Name" name="First Name" maxlength="40" placeholder="Jane" aria-label="First Name">
-      </div>
-      <div class="zf-field">
-        <label for="Last_Name">Last name <span>*</span></label>
-        <input type="text" id="Last_Name" name="Last Name" maxlength="80" placeholder="Doe" aria-required="true" aria-label="Last Name">
-      </div>
-    </div>
+  <button type="submit" class="zf-btn-submit">Submit Enquiry</button>
 
-    <div class="zf-field">
-      <label for="Email">Email address</label>
-      <input type="text" ftype="email" autocomplete="off" id="Email" name="Email" maxlength="100" placeholder="jane@example.com" aria-label="Email">
-    </div>
-
-    <div class="zf-field">
-      <label for="Phone">Phone number</label>
-      <input type="text" id="Phone" name="Phone" maxlength="30" placeholder="+91 98765 43210" aria-label="Phone">
-    </div>
-
-    <div class="zf-field">
-      <label for="Industry">Industry</label>
-      <select id="Industry" name="Industry" onchange="addAriaSelected6976070000010324261()" aria-label="Industry">
-        <option value="-None-">Select your industry</option>
-        <option value="General">General</option>
-        <option value="Healthcare">Healthcare</option>
-        <option value="Manufacturing">Manufacturing</option>
-        <option value="Law Firms">Law Firms</option>
-        <option value="E - Commerce">E - Commerce</option>
-        <option value="Kitchen Equiptment">Kitchen Equipment</option>
-      </select>
-    </div>
-
-    <input type="submit" id="formsubmit" class="zf-btn-submit" value="Submit enquiry" aria-label="Submit">
-    <input type="reset" class="zf-btn-reset" value="Clear form" aria-label="Reset">
-
-  </form>
-</div>
-
-<!-- Do not remove this — Analytics Tracking code -->
-<script id="wf_anal" src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=7ab1d957848a175f3e3e87afbc4a2fbe1c8e2dc113363451dba03606debecdc832ee43bac534a9d2e842828270952ed7gidece797dc4554dd19c30ff82e4be200f746c445fb15e2a2d3b4546c70208bfb7egidf6f8d3069c46c91a6c8ceace67168d8c4a5ad9c7792fa13045dbcab1a6884e63gid3b467cf3e3cd99101145930c9b445ae6bf671b41b0ae8b69b9675866e12af82d&tw=b6c89da95e44f6ec3cf64ee7d6e2f720f26706b53f9b4ce77847db92b02a2d92"></script>
-<!-- End Analytics Tracking code -->
+</form>
 
 <script>
-function addAriaSelected6976070000010324261() {
-  var optionElem = event.target;
-  var prev = optionElem.querySelector('[aria-selected=true]');
-  if (prev) prev.removeAttribute('aria-selected');
-  optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
-}
-function validateEmail6976070000010324261() {
-  var form = document.forms['WebToLeads6976070000010324261'];
-  var emailFld = form.querySelectorAll('[ftype=email]');
-  for (var i = 0; i < emailFld.length; i++) {
-    var v = emailFld[i].value;
-    if (v.replace(/^\s+|\s+$/g, '').length != 0) {
-      var at = v.indexOf('@'), dot = v.lastIndexOf('.');
-      if (at < 1 || dot < at + 2 || dot + 2 >= v.length) {
-        alert('Please enter a valid email address.');
-        emailFld[i].focus();
-        return false;
-      }
-    }
-  }
-  return true;
-}
 function checkMandatory6976070000010324261() {
-  var mnd = ['Last Name'], lbl = ['Last\x20Name'];
-  for (var i = 0; i < mnd.length; i++) {
-    var f = document.forms['WebToLeads6976070000010324261'][mnd[i]];
-    if (f) {
-      if (f.value.replace(/^\s+|\s+$/g, '').length == 0) {
-        alert(lbl[i] + ' cannot be empty.');
-        f.focus();
-        return false;
-      }
-    }
+  var lastName = document.querySelector('[name="Last Name"]');
+  if (!lastName.value.trim()) {
+    alert("Last Name is required");
+    return false;
   }
-  if (!validateEmail6976070000010324261()) return false;
-  document.getElementById('formsubmit').setAttribute('disabled', true);
   return true;
 }
 </script>
