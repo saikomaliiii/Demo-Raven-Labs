@@ -162,6 +162,49 @@
       background: #e5e7eb;
       color: #111;
     }
+
+    /* WHY SECTION */
+.why-title {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.why-title span {
+  color: #6d28d9;
+}
+
+.why-desc {
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+/* LIST STYLE */
+.why-list {
+  list-style: none;
+  padding: 0;
+}
+
+.why-list li {
+  margin-bottom: 14px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* CUSTOM CHECK ICON */
+.why-list li::before {
+  content: "✔";
+  color: #6d28d9;
+  font-weight: bold;
+  margin-right: 12px;
+  background: #ede9fe;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+}
   </style>
 </head>
 
@@ -214,21 +257,25 @@
 <section class="split">
 
   <div class="left">
-    <p>
-      Our solutions meet strict healthcare regulations while delivering
-      exceptional patient experiences.
-    </p>
 
-    <ul>
-      <li>Reduce workload by 40%</li>
-      <li>Improve patient satisfaction</li>
-      <li>Insurance integration</li>
-      <li>24/7 support</li>
-      <li>Cloud scalability</li>
-      <li>Mobile-first design</li>
-    </ul>
-  </div>
+  <h2 class="why-title">
+    Why Healthcare Organizations Choose <span>Raven Labs</span>
+  </h2>
 
+  <p class="why-desc">
+    We understand the unique challenges of the healthcare industry. Our solutions are designed to meet strict regulatory requirements while delivering exceptional user experiences.
+  </p>
+
+  <ul class="why-list">
+    <li>Reduce administrative workload by 40%</li>
+    <li>Improve patient satisfaction scores</li>
+    <li>Seamless insurance billing integration</li>
+    <li>24/7 technical support</li>
+    <li>Scalable cloud infrastructure</li>
+    <li>Mobile-first design for staff and patients</li>
+  </ul>
+
+</div>
   <!-- FORM -->
   <div class="right">
     <div id="crmWebToEntityForm">
