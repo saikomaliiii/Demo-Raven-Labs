@@ -1,166 +1,140 @@
-<!DOCTYPE html>
-<html>
+<style>
 
-<head>
-  <title>Healthcare</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+/* ===== RESET FOR THIS PAGE ONLY ===== */
+body {
+  background: #f5f5f7;
+  font-family: 'Poppins', sans-serif;
+}
 
-<body>
+/* HERO */
+.hero2 {
+  padding: 80px;
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: white;
+}
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="logo">
-      <img src="Logo-Theme-colors.webp">
-    </div>
+.hero-content {
+  max-width: 700px;
+}
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-    </ul>
-  </nav>
+.hero-content h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin: 10px 0;
+}
 
-  <!-- HERO -->
-  <section class="hero2">
-    <div class="hero-content">
-      <span class="tag">Healthcare Solutions</span>
-      <h1>Transform Patient Care with Digital Innovation</h1>
-      <p>
-        Empower your healthcare organization with cutting-edge technology solutions
-        designed to improve patient outcomes and streamline operations.
-      </p>
+.hero-content p {
+  color: #e0e7ff;
+  font-size: 18px;
+}
 
-      <div class="badges">
-        <span>HIPAA Compliant</span>
-        <span>24/7 Support</span>
-        <span>Cloud-Based</span>
-      </div>
-    </div>
-  </section>
+.tag {
+  background: rgba(255,255,255,0.2);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
 
-  <!-- GRID -->
-  <section class="grid-section">
-    <h2>Comprehensive Healthcare <span>Solutions</span></h2>
-    <p>End-to-end technology solutions for modern healthcare</p>
+.badges span {
+  background: rgba(255,255,255,0.2);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  margin-top: 20px;
+}
 
-    <div class="grid">
-      <div class="box"><h3>Patient Management</h3><p>Manage records efficiently.</p></div>
-      <div class="box"><h3>Security</h3><p>Ensure data protection.</p></div>
-      <div class="box"><h3>Telemedicine</h3><p>Enable virtual care.</p></div>
-      <div class="box"><h3>Scheduling</h3><p>Smart scheduling systems.</p></div>
-      <div class="box"><h3>Analytics</h3><p>Data-driven insights.</p></div>
-      <div class="box"><h3>Monitoring</h3><p>Track patient health.</p></div>
-    </div>
-  </section>
+/* GRID */
+.grid-section {
+  padding: 80px;
+  text-align: center;
+}
 
-  <!-- SPLIT -->
-  <section class="split">
+.grid-section h2 span {
+  color: #6d28d9;
+}
 
-    <div class="left">
-      <p>
-        Our solutions meet strict healthcare regulations while delivering
-        exceptional patient experiences.
-      </p>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
 
-      <ul>
-        <li>Reduce workload by 40%</li>
-        <li>Improve patient satisfaction</li>
-        <li>Insurance integration</li>
-        <li>24/7 support</li>
-        <li>Cloud scalability</li>
-        <li>Mobile-first design</li>
-      </ul>
-    </div>
+.box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: left;
+}
 
-    <!-- ✅ ZOHO FORM (FIXED + CLEAN) -->
-    <div class="right">
+/* SPLIT */
+.split {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 80px;
+}
 
-      <div id='crmWebToEntityForm' class='zcwf_lblLeft'>
+.left {
+  width: 50%;
+}
 
-        <form id='webform6976070000010662036'
-          action='https://crm.zoho.com/crm/WebToLeadForm'
-          method='POST'
-          onsubmit='return checkMandatory6976070000010662036()'>
+.left ul {
+  margin-top: 20px;
+}
 
-          <!-- REQUIRED -->
-          <input type='hidden' name='xnQsjsdp'
-            value='4b84b9f3ee143a401ca0e62180717c41a465aa939dd8dda5aef9e3c9e3737df9'>
+.left li {
+  margin-bottom: 10px;
+}
 
-          <input type='hidden' name='xmIwtLD'
-            value='b410955a01a101452e6be6563696bd84588d02c697d2b906752226f387f11e86071e09ea8922770efa620d4cf1253483'>
+/* FORM */
+.right {
+  width: 50%;
+}
 
-          <input type='hidden' name='actionType' value='TGVhZHM='>
+#crmWebToEntityForm {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
 
-          <!-- CHANGE THIS -->
-          <input type='hidden' name='returnURL'
-            value='https://yourdomain.com/thankyou.html'>
+/* remove Zoho float */
+.zcwf_col_lab,
+.zcwf_col_fld {
+  float: none !important;
+  width: 100% !important;
+}
 
-          <!-- FIELDS -->
-          <div class='zcwf_row'>
-            <label>First Name</label>
-            <input type='text' name='First Name'>
-          </div>
+.zcwf_row {
+  margin-bottom: 15px;
+}
 
-          <div class='zcwf_row'>
-            <label>Last Name *</label>
-            <input type='text' name='Last Name'>
-          </div>
+.zcwf_row label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
 
-          <div class='zcwf_row'>
-            <label>Phone</label>
-            <input type='text' name='Phone'>
-          </div>
+.zcwf_row input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
 
-          <div class='zcwf_row'>
-            <label>Email</label>
-            <input type='text' name='Email'>
-          </div>
+/* BUTTON */
+.formsubmit {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
 
-          <div class='zcwf_row'>
-            <label>Company *</label>
-            <input type='text' name='Company'>
-          </div>
-
-          <!-- hidden fields -->
-          <input type='hidden' name='Industry' value='Healthcare'>
-          <input type='hidden' name='LEADCF7' value='Healthcare Page'>
-
-          <!-- BUTTON -->
-          <input type='submit' class='formsubmit' value='Submit'>
-          <input type='reset' class='formsubmit' value='Reset'>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- VALIDATION (KEPT) -->
-  <script>
-    function checkMandatory6976070000010662036() {
-      var lastName = document.querySelector('[name="Last Name"]');
-      var company = document.querySelector('[name="Company"]');
-
-      if (!lastName.value.trim()) {
-        alert("Last Name cannot be empty");
-        return false;
-      }
-
-      if (!company.value.trim()) {
-        alert("Company cannot be empty");
-        return false;
-      }
-
-      return true;
-    }
-  </script>
-
-  <!-- ZOHO ANALYTICS (KEPT) -->
-  <script id='wf_anal'
-    src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet'>
-  </script>
-
-</body>
-
-</html>
+</style>
