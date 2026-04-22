@@ -1,16 +1,209 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Healthcare</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Law Firms</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f7;
+      color: #111;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: white;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    /* HERO */
+    .hero2 {
+      padding: 80px;
+      background: linear-gradient(135deg, #6d28d9, #7c3aed);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero-content h1 {
+      font-size: 56px;
+      margin: 10px 0;
+    }
+
+    .hero-content p {
+      color: #e0e7ff;
+      font-size: 18px;
+    }
+
+    .tag {
+      background: rgba(255,255,255,0.2);
+      padding: 8px 15px;
+      border-radius: 20px;
+    }
+
+    .badges span {
+      background: rgba(255,255,255,0.2);
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-right: 10px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    /* GRID */
+    .grid-section {
+      padding: 80px;
+      text-align: center;
+    }
+
+    .grid-section h2 span {
+      color: #6d28d9;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    /* SPLIT */
+    .split {
+      display: flex;
+      gap: 60px;
+      padding: 80px;
+      align-items: center;
+    }
+
+    .left {
+      width: 50%;
+    }
+
+    .why-title {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .why-title span {
+      color: #6d28d9;
+    }
+
+    .why-desc {
+      color: #6b7280;
+      margin-bottom: 25px;
+    }
+
+    .why-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .why-list li {
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+    }
+
+    .why-list li::before {
+      content: "✔";
+      color: #6d28d9;
+      margin-right: 10px;
+      background: #ede9fe;
+      border-radius: 50%;
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+
+    .right {
+      width: 50%;
+    }
+
+    /* ===== ZOHO FORM FIX ===== */
+    #crmWebToEntityForm {
+      background: white !important;
+      padding: 30px !important;
+      border-radius: 20px !important;
+      box-shadow: 0 20px 60px rgba(109, 40, 217, 0.15) !important;
+    }
+
+    /* REMOVE FLOAT */
+    #crmWebToEntityForm .zcwf_col_lab,
+    #crmWebToEntityForm .zcwf_col_fld {
+      float: none !important;
+      width: 100% !important;
+    }
+
+    #crmWebToEntityForm .zcwf_row {
+      margin-bottom: 15px;
+    }
+
+    #crmWebToEntityForm label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    #crmWebToEntityForm input,
+    #crmWebToEntityForm textarea,
+    #crmWebToEntityForm select {
+      width: 100% !important;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      background: #f9fafb;
+    }
+
+    #crmWebToEntityForm input:focus,
+    #crmWebToEntityForm textarea:focus {
+      border-color: #6d28d9;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(109,40,217,0.2);
+    }
+
+    /* BUTTON FIX */
+    #crmWebToEntityForm .formsubmit {
+      width: 100% !important;
+      padding: 14px !important;
+      border-radius: 30px !important;
+      border: none !important;
+      background: linear-gradient(135deg, #6d28d9, #7c3aed) !important;
+      color: white !important;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    #crmWebToEntityForm input[type="reset"] {
+      background: #e5e7eb !important;
+      color: #111 !important;
+    }
+
+  </style>
 </head>
+
 <body>
 
 <nav>
   <div class="logo">
     <img src="Logo-Theme-colors.webp">
   </div>
-  <ul class="nav-links">
+  <ul>
     <li><a href="index.html">Home</a></li>
   </ul>
 </nav>
@@ -18,103 +211,452 @@
 <!-- HERO -->
 <section class="hero2">
   <div class="hero-content">
-    <span class="tag">Legal Technology
-</span>
-    <h1>Modern Legal Practice Management
-</h1>
+    <span class="tag">Legal Technology</span>
+    <h1>Modern Legal Practice Management</h1>
     <p>
-      Streamline your law firm's operations with secure, efficient technology solutions designed specifically for legal professionals.
-
-
+      Streamline your law firm's operations with secure, efficient technology solutions.
     </p>
 
     <div class="badges">
-      <span>ABA Compliant
-</span>
+      <span>ABA Compliant</span>
       <span>E-Discovery</span>
       <span>Court Integration</span>
     </div>
   </div>
 </section>
 
-<!-- SERVICES GRID -->
+<!-- GRID -->
 <section class="grid-section">
   <h2>Comprehensive Legal Technology <span>Suite</span></h2>
-  <p>End-to-end technology solutions for modern healthcare</p>
 
   <div class="grid">
-    <div class="box">
-      <h3>Case Management</h3>
-      <p>Comprehensive case tracking with automated workflows and deadline management.</p>
-    </div>
-
-    <div class="box">
-      <h3>Time & Billing</h3>
-      <p>Accurate time tracking and invoicing with client portal integration.</p>
-    </div>
-
-    <div class="box">
-      <h3>Document Security</h3>
-      <p>Bank-grade encryption and access controls for confidential documents.</p>
-    </div>
-
-    <div class="box">
-      <h3>Client Portal</h3>
-      <p>Secure communication and document sharing with your clients.</p>
-    </div>
-
-    <div class="box">
-      <h3>Practice Analytics</h3>
-      <p>Insights into firm performance, case outcomes, and revenue trends.</p>
-    </div>
-
-    <div class="box">
-      <h3>Compliance Tools</h3>
-      <p>Built-in compliance checks and regulatory requirement tracking.</p>
-    </div>
+    <div class="box"><h3>Case Management</h3></div>
+    <div class="box"><h3>Time & Billing</h3></div>
+    <div class="box"><h3>Document Security</h3></div>
+    <div class="box"><h3>Client Portal</h3></div>
+    <div class="box"><h3>Practice Analytics</h3></div>
+    <div class="box"><h3>Compliance Tools</h3></div>
   </div>
 </section>
 
-<!-- SPLIT SECTION -->
+<!-- SPLIT -->
 <section class="split">
-  <div class="left">
-    <p>
-Our legal technology solutions are designed by lawyers, for lawyers. We understand the unique demands of legal practice and deliver tools that make a difference.
-</p>
 
-<ul>
-  <li>Reduce administrative time by 30%</li>
-  <li>Secure cloud-based document storage</li>
-  <li>Automated conflict of interest checks</li>
-  <li>Integration with court filing systems</li>
-  <li>Mobile access for attorneys on the go</li>
-  <li>Customizable matter templates</li>
-</ul>
+  <div class="left">
+    <h2 class="why-title">
+      Why Law Firms Choose <span>Raven Labs</span>
+    </h2>
+
+    <p class="why-desc">
+      Built for legal professionals, our solutions simplify workflows, ensure compliance,
+      and enhance client experience.
+    </p>
+
+    <ul class="why-list">
+      <li>Reduce admin workload by 30%</li>
+      <li>Secure document management</li>
+      <li>Automated compliance checks</li>
+      <li>Court system integrations</li>
+      <li>Mobile-friendly access</li>
+      <li>Custom workflows</li>
+    </ul>
   </div>
 
   <div class="right">
-  <h2>Get Your Free Assessment</h2>
 
-  <form action="https://crm.zoho.com/crm/WebToLeadForm" method="POST">
+    <!-- PASTE YOUR FULL ZOHO FORM HERE (UNCHANGED) -->
 
-    <!-- Required hidden Zoho fields -->
-    <input type="hidden" name="xnQsjsdp" value="db2260206803ef1fcd9d785a46fc8fa659cb2133248b9c1e89c86f2e33380ce9">
-    <input type="hidden" name="xmIwtLD" value="39705568a4585faf029739a304113435be3db4a44cf0994eb1c1021a14dc2e53a731774f055adecc1c6e28cbda88206e">
-    <input type="hidden" name="actionType" value="TGVhZHM=">
+    <!-- Note :
+   - You can modify the font style and form style to suit your website. 
+   - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
+   - The Mandatory check script can modified as to suit your business needs. 
+   - It is important that you test the modified form before going live.-->
+<div id = 'crmWebToEntityForm' class = 'zcwf_lblLeft crmWebToEntityForm' style = 'background-color: white;color: black;max-width: 600px;'>
+	<meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+		<META HTTP-EQUIV = 'content-type' CONTENT = 'text/html;charset=UTF-8'>
+			<form id = 'webform6976070000010662088' action = 'https://crm.zoho.com/crm/WebToLeadForm' name = WebToLeads6976070000010662088 method = 'POST' onSubmit = 'javascript:document.charset="UTF-8"; return checkMandatory6976070000010662088()' accept-charset = 'UTF-8'>
+				<input type = 'text' style = 'display:none;' name = 'xnQsjsdp' value = '669c3e8817501ece9868952aa222e0ee20ef88247398d698d594049ada20ea5b'>
+				</input>
+				<input type = 'hidden' name = 'zc_gad' id = 'zc_gad' value = ''>
+				</input>
+				<input type = 'text' style = 'display:none;' name = 'xmIwtLD' value = 'cd4543bd8bb384acbd5b093fc2cf3dbdfe11eb081fb7f9aaff7c16d9062fdc571d2a8330d36ccdf0c4acd6853f92f98b'>
+				</input>
+				<input type = 'text' style = 'display:none;' name = 'actionType' value = 'TGVhZHM='>
+				</input>
+				<input type = 'text' style = 'display:none;' name = 'returnURL' value = 'null'>
+				</input>
+				<!-- Do not remove this code. -->
+				<style>
+					html,body{
+						margin: 0px;
+					}
+					.formsubmit.zcwf_button{
+						color: white !important;
+						background: transparent linear-gradient(0deg, #0279FF 0%, #00A3F3 100%);
+					}
+					#crmWebToEntityForm.zcwf_lblLeft{
+						width: 100%;
+						padding: 25px;
+						margin: 0 auto;
+						box-sizing: border-box;
+					}
+					#crmWebToEntityForm.zcwf_lblLeft *{
+						box-sizing: border-box;
+					}
+					#crmWebToEntityForm {text-align: left;
+					}
+					#crmWebToEntityForm *{
+					direction: ltr;
+					}
+					.zcwf_lblLeft .zcwf_title{
+					word-wrap: break-word;
+					padding: 0px 6px 10px;
+					font-weight: bold }
+					.zcwf_lblLeft.cpT_primaryBtn:hover{
+					background: linear-gradient(#02acff 0,#006be4 100%)no-repeat padding-box !important;
+					box-shadow: 0 -2px 0 0  #0159b9 inset !important;
+					border: 0 !important;
+					color:  #fff !important;
+					outline: 0 !important;
+					}
+					.zcwf_lblLeft .zcwf_col_fld input[ type  = text], input[ type  = password], .zcwf_lblLeft .zcwf_col_fld textarea{
+					width: 60%;
+					border: 1px solid  #c0c6cc !important;
+					resize: vertical;
+					border-radius: 2px;
+					float: left;
+					}
+					.zcwf_lblLeft .zcwf_col_lab{
+					width: 30%;
+					word-break: break-word;
+					padding: 0px 6px 0px;
+					margin-right: 10px;
+					margin-top: 5px;
+					float: left;
+					min-height: 1px;
+					}
+					.zcwf_lblLeft .zcwf_col_fld{
+					float: left;
+					width: 68%;
+					padding: 0px 6px 0px;
+					position: relative;
+					margin-top: 5px;
+					}
+					.zcwf_lblLeft .zcwf_privacy {padding: 6px;
+					}
+					.zcwf_lblLeft .wfrm_fld_dpNn {display: none;
+					}
+					.dIB {display: inline-block;
+					}
+					.zcwf_lblLeft .zcwf_col_fld_slt{
+					width: 60%;
+					border: 1px solid  #ccc;
+					background:  #fff;
+					border-radius: 4px;
+					font-size: 12px;
+					float: left;
+					resize: vertical;
+					padding: 2px 5px;
+					}
+					.zcwf_lblLeft .zcwf_row:after, .zcwf_lblLeft .zcwf_col_fld:after{
+					content: '';
+					display: table;
+					clear: both;
+					}
+					.zcwf_lblLeft .zcwf_col_help{
+					float: left;
+					margin-left: 7px;
+					font-size: 12px;
+					max-width: 35%;
+					word-break: break-word;
+					}
+					.zcwf_lblLeft .zcwf_help_icon{
+					cursor: pointer;
+					width: 16px;
+					height: 16px;
+					display: inline-block;
+					background:  #fff;
+					border: 1px solid  #c0c6cc;
+					color:  #c1c1c1;
+					text-align: center;
+					font-size: 11px;
+					line-height: 16px;
+					font-weight: bold;
+					border-radius: 50%;
+					}
+					.zcwf_lblLeft .zcwf_row {margin: 15px 0px;
+					}
+					.zcwf_lblLeft .formsubmit{
+					margin-right: 5px;
+					cursor: pointer;
+					color:  #313949;
+					font-size: 12px;
+					}
+					.zcwf_lblLeft .zcwf_privacy_txt{
+					width: 90%;
+					color: rgb(0, 0, 0);
+					font-size: 12px;
+					font-family: Arial;
+					display: inline-block;
+					vertical-align: top;
+					color:  #313949;
+					padding-top: 2px;
+					margin-left: 6px;
+					}
+					.zcwf_lblLeft .zcwf_button{
+					font-size: 12px;
+					color:  #313949;
+					border: 1px solid  #c0c6cc;
+					padding: 3px 9px;
+					border-radius: 4px;
+					cursor: pointer;
+					max-width: 120px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					}
+					.zcwf_lblLeft .zcwf_tooltip_over{
+					position: relative;
+					}
+					.zcwf_lblLeft .zcwf_tooltip_ctn{
+					position: absolute;
+					background:  #dedede;
+					padding: 3px 6px;
+					top: 3px;
+					border-radius: 4px;
+					word-break: break-word;
+					min-width: 100px;
+					max-width: 150px;
+					color:  #313949;
+					z-index: 100;
+					}
+					.zcwf_lblLeft .zcwf_ckbox{
+					float: left;
+					}
+					.zcwf_lblLeft .zcwf_file{
+					width: 55%;
+					box-sizing: border-box;
+					float: left;
+					}
+					.cBoth:after{
+					content: '';
+					display: block;
+					clear: both;
+					}
+					@media all and  (max-width: 600px){
+					.zcwf_lblLeft .zcwf_col_lab, .zcwf_lblLeft .zcwf_col_fld{
+					width: auto;
+					float: none !important;
+					}
+					.zcwf_lblLeft .zcwf_col_help {width: 40%;
+					}
+					}
+				</style>
+				<div class = 'zcwf_title' style = 'max-width: 600px;color: black; font-family:Arial;'>Law Firms</div>
+				<div class = 'zcwf_row'>
+					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
+						<label for = 'First_Name'>First Name</label>
+					</div>
+					<div class = 'zcwf_col_fld'>
+						<input type = 'text' id = 'First_Name' aria-required = 'false' aria-label = 'First Name' name = 'First Name' aria-valuemax = '40' maxlength = '40'>
+						</input>
+						<div class = 'zcwf_col_help'>
+						</div>
+					</div>
+				</div>
+				<div class = 'zcwf_row'>
+					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
+						<label for = 'Last_Name'>Last Name
+							<span style = 'color:red;'>*</span>
+						</label>
+					</div>
+					<div class = 'zcwf_col_fld'>
+						<input type = 'text' id = 'Last_Name' aria-required = 'true' aria-label = 'Last Name' name = 'Last Name' aria-valuemax = '80' maxlength = '80'>
+						</input>
+						<div class = 'zcwf_col_help'>
+						</div>
+					</div>
+				</div>
+				<div class = 'zcwf_row'>
+					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
+						<label for = 'Phone'>Phone</label>
+					</div>
+					<div class = 'zcwf_col_fld'>
+						<input type = 'text' id = 'Phone' aria-required = 'false' aria-label = 'Phone' name = 'Phone' aria-valuemax = '30' maxlength = '30'>
+						</input>
+						<div class = 'zcwf_col_help'>
+						</div>
+					</div>
+				</div>
+				<div class = 'zcwf_row'>
+					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
+						<label for = 'Email'>Email</label>
+					</div>
+					<div class = 'zcwf_col_fld'>
+						<input type = 'text' ftype = 'email' autocomplete = 'false' id = 'Email' aria-required = 'false' aria-label = 'Email' name = 'Email' aria-valuemax = '100' crmlabel = '' maxlength = '100'>
+						</input>
+						<div class = 'zcwf_col_help'>
+						</div>
+					</div>
+				</div>
+				<div class = 'zcwf_row'>
+					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
+						<label for = 'Company'>Company
+							<span style = 'color:red;'>*</span>
+						</label>
+					</div>
+					<div class = 'zcwf_col_fld'>
+						<input type = 'text' id = 'Company' aria-required = 'true' aria-label = 'Company' name = 'Company' aria-valuemax = '200' maxlength = '200'>
+						</input>
+						<div class = 'zcwf_col_help'>
+						</div>
+					</div>
+				</div>
+				<div class = 'zcwf_row wfrm_fld_dpNn'>
+					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
+						<label for = 'Industry'>Industry</label>
+					</div>
+					<div class = 'zcwf_col_fld'>
+						<select class = 'zcwf_col_fld_slt' role = 'combobox' aria-expanded = 'false' aria-haspopup = 'listbox' id = 'Industry'onChange='addAriaSelected6976070000010662088()' aria-required = 'false' aria-label = 'Industry' name = 'Industry'>
+							<option value = '-None-'>-None-</option>
+							<option value = 'General'>General</option>
+							<option value = 'Healthcare'>Healthcare</option>
+							<option value = 'Manufacturing'>Manufacturing</option>
+							<option selected value = 'Law&#x20;Firms'>Law Firms</option>
+							<option value = 'E&#x20;-&#x20;Commerce'>E - Commerce</option>
+							<option value = 'Kitchen&#x20;Equiptment'>Kitchen Equiptment</option>
+						</select>
+						<div class = 'zcwf_col_help'>
+						</div>
+					</div>
+				</div>
+				<div class = 'zcwf_row wfrm_fld_dpNn'>
+					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
+						<label for = 'LEADCF7'>Source Page</label>
+					</div>
+					<div class = 'zcwf_col_fld'>
+						<select class = 'zcwf_col_fld_slt' role = 'combobox' aria-expanded = 'false' aria-haspopup = 'listbox' id = 'LEADCF7'onChange='addAriaSelected6976070000010662088()' aria-required = 'false' aria-label = 'LEADCF7' name = 'LEADCF7'>
+							<option value = '-None-'>-None-</option>
+							<option value = 'Home'>Home</option>
+							<option value = 'Healthcare&#x20;Page'>Healthcare Page</option>
+							<option value = 'Manufacturing&#x20;Page'>Manufacturing Page</option>
+							<option selected value = 'Law&#x20;Firms&#x20;Page'>Law Firms Page</option>
+							<option value = 'E-&#x20;Commerce&#x20;Page'>E- Commerce Page</option>
+							<option value = 'Kitchen&#x20;Equiptment&#x20;Page'>Kitchen Equiptment Page</option>
+						</select>
+						<div class = 'zcwf_col_help'>
+						</div>
+					</div>
+				</div>
+				<input type = 'text' type = 'hidden' style = 'display: none;' name = 'aG9uZXlwb3Q' value = ''/>
+				<div class = 'zcwf_row'>
+					<div class = 'zcwf_col_lab'>
+					</div>
+					<div class = 'zcwf_col_fld'>
+						<input type = 'submit' id = 'formsubmit' role = 'button' class = 'formsubmit zcwf_button' value = 'Submit' aria-label = 'Submit' title = 'Submit'>
+							<input type = 'reset' class = 'zcwf_button' role = 'button' name = 'reset' value = 'Reset' aria-label = 'Reset' title = 'Reset'>
+							</div>
+						</div>
+						<script>
+							function addAriaSelected6976070000010662088(){
+								var optionElem = event.target;
+								var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+								if (previousSelectedOption) {
+									previousSelectedOption.removeAttribute('aria-selected');
+								}
+								optionElem.querySelectorAll('option') [optionElem.selectedIndex] .ariaSelected = 'true';
+							}
+							function validateEmail6976070000010662088(){
+								var form = document.forms['WebToLeads6976070000010662088'];
+								var emailFld = form.querySelectorAll('[ftype=email]');
+								var i;
+								for(i = 0; i < emailFld.length; i++ ) {
+									var emailVal = emailFld[i].value;
+									if ((emailVal.replace (/^\s+|\s+$/g,'') ) .length != 0) {
+										var atpos = emailVal.indexOf('@');
+										var dotpos = emailVal.lastIndexOf('.');
+										if(atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+											alert('Please enter a valid email address. ');
+											emailFld[i].focus();
+											return false;
+										}
+									}
+								}
+								return true;
+							}
+							function checkMandatory6976070000010662088(){
+								var mndFileds = new Array('Company', 'Last Name');
+								var fldLangVal = new Array('Company', 'Last\x20Name');
+								for (i = 0; i < mndFileds.length; i++ ) {
+									var fieldObj = document.forms['WebToLeads6976070000010662088'] [mndFileds[i]];
+									if (fieldObj) {
+										if(((fieldObj.value) .replace (/^\s+|\s+$/g,'') ) .length == 0) {
+											if (fieldObj.type == 'file') {
+												alert('Please select a file to upload.');
+												fieldObj.focus();
+												return false;
+											}
+											alert(fldLangVal[i] + ' cannot be empty.');
+											fieldObj.focus();
+											return false;
+										} else if (fieldObj.nodeName == 'SELECT') {
+											if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+												alert(fldLangVal[i] + ' cannot be none.');
+												fieldObj.focus();
+												return false;
+											}
+										} else if (fieldObj.type == 'checkbox') {
+											if (fieldObj.checked == false) {
+												alert('Please accept  ' + fldLangVal[i]);
+												fieldObj.focus();
+												return false;
+											}
+										}
+										try{
+											if (fieldObj.name == 'Last Name') {
+												name = fieldObj.value;
+											}
+										} catch (e){}
+									}
+								}
+								if ( !validateEmail6976070000010662088 () ) {
+									return false;
+								}
+								var urlparams = new URLSearchParams(window.location.search);
+								if (urlparams.has ('service') && (urlparams.get ('service') === 'smarturl') ) {
+									var webform = document.getElementById('webform6976070000010662088');
+									var service = urlparams.get('service');
+									var smarturlfield = document.createElement('input');
+									smarturlfield.setAttribute('type', 'hidden');
+									smarturlfield.setAttribute('value', service);
+									smarturlfield.setAttribute('name', 'service');
+									webform.appendChild(smarturlfield);
+								}
+								document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+							}
+							function tooltipShow6976070000010662088(el){
+								var tooltip = el.nextElementSibling;
+								var tooltipDisplay = tooltip.style.display;
+								if (tooltipDisplay == 'none') {
+									var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+									for (i = 0; i < allTooltip.length; i++ ) {
+										allTooltip[i].style.display = 'none';
+									}
+									tooltip.style.display = 'block';
+								} else {
+									tooltip.style.display = 'none';
+								}
+							}
+						</script>
+						<!-- Do not remove this --- Analytics Tracking code starts -->
+						<script id = 'wf_anal' src = 'https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=32893b3665b0606221af42498386a0b41f99cdb92012ed5230c13472f3bd7cada9eba68fcba094659a3871b9583117bdgid24d9ff8ab4df54d75b70b8307da297956860f1bb0a1fc8b7bc3dabb8f8765500gidbd1cb9f45d5c091b15e1ab1f8f1b669e6073c28c853b8231d94758828a4b63dcgid9f40fcaa6b3fa0c689a973e32218800333f573bff6920b2d1fd8347a1abf9fe6&tw=42e0ec8e0384ce084ce2dd40ba635dbde25aa849d5c8e89257aff66d0b050dc4'>
+					</script>
+					<!-- Do not remove this --- Analytics Tracking code ends. -->
+				</form>
+			</div>
 
-    <!-- 🔥 THIS IS YOUR SERVICE FIELD -->
-    <input type="hidden" name="Service" value="Law Firm">
+  </div>
 
-    <!-- User fields -->
-    <input name="First Name" placeholder="Full Name">
-    <input name="Email" placeholder="Email">
-    <input name="Phone" placeholder="Phone">
-    <textarea name="Description" placeholder="Your requirement"></textarea>
-
-    <button type="submit">Submit</button>
-
-  </form>
-</div>
 </section>
 
 </body>
