@@ -307,3 +307,44 @@ input[type="reset"] {
   background: #e5e7eb;
   color: #111;
 }
+
+.logo img {
+  height: 45px;
+  width: auto;
+}
+
+nav {
+  height: 70px;
+}
+
+.hero2,
+.grid-section,
+.split {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.split {
+  display: flex;
+  align-items: center;   /* 🔥 THIS FIXES VERTICAL ALIGN */
+  justify-content: space-between;
+  padding: 100px 20px;
+  gap: 60px;
+}
+
+.left {
+  width: 50%;
+  max-width: 550px;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right #crmWebToEntityForm {
+  width: 100%;
+  max-width: 400px;
+}
