@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #020617;
+  background: #020617;   /* dark base */
   color: white;
 }
 
@@ -75,16 +75,12 @@ nav {
 }
 
 /* ===== HERO ===== */
-.hero,
-.hero2 {
-  background: linear-gradient(135deg, #6d28d9, #7c3aed);
-}
-
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 100px 80px;
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
 }
 
 .hero-left {
@@ -103,23 +99,19 @@ nav {
   width: 400px;
 }
 
-/* ===== SECTION BACKGROUNDS ===== */
-.split {
-  background: #020617;
-}
-
 /* ===== COMMON CONTAINER ===== */
 .hero2,
 .grid-section,
 .split {
-  max-width: 1200px;
-  margin: auto;
+  background: transparent;
 }
 
+/* ===== HEALTHCARE HERO ===== */
 .hero2 {
   padding: 80px 20px;
 }
 
+/* ===== GRID SECTION ===== */
 .grid-section {
   padding: 60px 20px;
 }
@@ -143,11 +135,6 @@ nav {
   justify-content: center;
 }
 
-.left p,
-.grid-section p {
-  color: #e0e7ff;
-}
-
 /* RIGHT SIDE */
 .right {
   width: 50%;
@@ -156,34 +143,37 @@ nav {
   align-items: center;
 }
 
-/* ===== HEALTHCARE PAGE FORM ===== */
+/* ===== ZOHO FORM (FINAL CLEAN VERSION) ===== */
 .split .right #crmWebToEntityForm {
   width: 100%;
   max-width: 380px;
-  background: #ffffff;
+  background: white;
   color: #111;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* remove Zoho floats */
+/* remove Zoho float system */
 .split .right .zcwf_col_lab,
 .split .right .zcwf_col_fld {
   float: none !important;
   width: 100% !important;
 }
 
+/* spacing */
 .split .right .zcwf_row {
   margin-bottom: 15px;
 }
 
+/* labels */
 .split .right .zcwf_col_lab label {
   display: block;
   font-size: 14px;
   margin-bottom: 5px;
 }
 
+/* inputs */
 .split .right .zcwf_col_fld input,
 .split .right .zcwf_col_fld select {
   width: 100% !important;
@@ -193,11 +183,13 @@ nav {
   font-size: 14px;
 }
 
+/* focus effect */
 .split .right input:focus {
   border-color: #6d28d9;
   outline: none;
 }
 
+/* submit button */
 .split .right .formsubmit {
   width: 100%;
   padding: 14px;
@@ -208,55 +200,11 @@ nav {
   cursor: pointer;
 }
 
+/* reset button */
 .split .right input[type="reset"] {
   background: #e5e7eb;
   color: #111;
   margin-top: 10px;
-}
-
-/* ===== HOME PAGE FORM ===== */
-.hero #crmWebToEntityForm {
-  background: white;
-  border-radius: 15px;
-  padding: 25px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-}
-
-/* fix Zoho layout in hero */
-.hero .zcwf_col_lab,
-.hero .zcwf_col_fld {
-  float: none !important;
-  width: 100% !important;
-}
-
-.hero .zcwf_row {
-  margin-bottom: 12px;
-}
-
-.hero .zcwf_col_lab label {
-  font-size: 13px;
-  margin-bottom: 5px;
-  display: block;
-  color: #111;
-}
-
-.hero .zcwf_col_fld input,
-.hero .zcwf_col_fld select {
-  width: 100% !important;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 13px;
-}
-
-.hero .formsubmit {
-  width: 100%;
-  padding: 12px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #0279FF, #00A3F3);
-  color: white;
-  border: none;
-  cursor: pointer;
 }
 
 /* ===== FOOTER ===== */
@@ -265,3 +213,26 @@ footer {
   padding: 40px;
   color: #94a3b8;
 }
+
+.left p,
+.grid-section p {
+  color: #e0e7ff;
+}
+
+.split .right #crmWebToEntityForm {
+  background: #ffffff;
+  color: #111;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.hero,
+.hero2 {
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+}
+
+.split {
+  background: #020617;
+}
+
