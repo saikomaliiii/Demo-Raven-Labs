@@ -36,12 +36,10 @@
 
     .hero-content h1 {
       font-size: 56px;
-      margin: 10px 0;
     }
 
     .hero-content p {
       color: #e0e7ff;
-      font-size: 18px;
     }
 
     .tag {
@@ -63,10 +61,6 @@
     .grid-section {
       padding: 80px;
       text-align: center;
-    }
-
-    .grid-section h2 span {
-      color: #6d28d9;
     }
 
     .grid {
@@ -135,7 +129,7 @@
       width: 50%;
     }
 
-    /* ZOHO FORM FIX */
+    /* ===== ZOHO FORM FIX ===== */
     #crmWebToEntityForm {
       background: white !important;
       padding: 30px !important;
@@ -205,10 +199,7 @@
   <div class="hero-content">
     <span class="tag">Manufacturing Solutions</span>
     <h1>Industry 4.0 Smart Manufacturing</h1>
-    <p>
-      Transform your manufacturing operations with cutting-edge automation,
-      IoT integration, and data-driven insights.
-    </p>
+    <p>Transform your manufacturing operations with automation and AI.</p>
 
     <div class="badges">
       <span>IoT Enabled</span>
@@ -220,7 +211,7 @@
 
 <!-- GRID -->
 <section class="grid-section">
-  <h2>End-to-End Manufacturing <span>Solutions</span></h2>
+  <h2>End-to-End Manufacturing Solutions</h2>
 
   <div class="grid">
     <div class="box"><h3>Smart Automation</h3></div>
@@ -241,24 +232,59 @@
     </h2>
 
     <p class="why-desc">
-      Our solutions optimize production efficiency, reduce downtime,
-      and provide real-time visibility across operations.
+      Optimize production, reduce downtime, and gain real-time insights.
     </p>
 
     <ul class="why-list">
-      <li>Increase production efficiency by 35%</li>
+      <li>Increase efficiency by 35%</li>
       <li>Reduce downtime by 50%</li>
-      <li>Real-time visibility</li>
+      <li>Real-time monitoring</li>
       <li>IoT integration</li>
       <li>Custom dashboards</li>
-      <li>Scalable solutions</li>
+      <li>Scalable systems</li>
     </ul>
   </div>
 
   <div class="right">
 
-    <!-- PASTE YOUR ZOHO FORM HERE -->
-    <!-- KEEP IT SAME (no edits needed) -->
+    <!-- YOUR ZOHO FORM -->
+    <div id="crmWebToEntityForm">
+
+      <form action="https://crm.zoho.com/crm/WebToLeadForm" method="POST">
+
+        <input type="hidden" name="xnQsjsdp" value="b8cf36c963c9fb5d399964a4c9072d420320930e8a0272a31705fa7170949c4c">
+        <input type="hidden" name="xmIwtLD" value="fae398e0531e94b32cfbf645daca27d78db1812871a8328ff820442240ff6db1fe1a86e472f3a19bee76998c1e71462a">
+        <input type="hidden" name="actionType" value="TGVhZHM=">
+
+        <div class="zcwf_row">
+          <label>First Name</label>
+          <input type="text" name="First Name">
+        </div>
+
+        <div class="zcwf_row">
+          <label>Last Name *</label>
+          <input type="text" name="Last Name">
+        </div>
+
+        <div class="zcwf_row">
+          <label>Phone</label>
+          <input type="text" name="Phone">
+        </div>
+
+        <div class="zcwf_row">
+          <label>Email</label>
+          <input type="text" name="Email">
+        </div>
+
+        <div class="zcwf_row">
+          <label>Company *</label>
+          <input type="text" name="Company">
+        </div>
+
+        <input type="submit" class="formsubmit" value="Submit">
+      </form>
+
+    </div>
 
   </div>
 
