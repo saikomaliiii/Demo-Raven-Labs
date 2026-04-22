@@ -52,15 +52,15 @@
    - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
    - The Mandatory check script can modified as to suit your business needs. 
    - It is important that you test the modified form before going live.-->
-<div id = 'crmWebToEntityForm' class = 'zcwf_lblLeft crmWebToEntityForm' style = 'background-color: &#x23;6D28D9;color: black;max-width: 600px;'>
+<div id = 'crmWebToEntityForm' class = 'zcwf_lblLeft crmWebToEntityForm' style = 'background-color: white;color: black;max-width: 600px;'>
 	<meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
 		<META HTTP-EQUIV = 'content-type' CONTENT = 'text/html;charset=UTF-8'>
-			<form id = 'webform6976070000010324261' action = 'https://crm.zoho.com/crm/WebToLeadForm' name = WebToLeads6976070000010324261 method = 'POST' onSubmit = 'javascript:document.charset="UTF-8"; return checkMandatory6976070000010324261()' accept-charset = 'UTF-8'>
-				<input type = 'text' style = 'display:none;' name = 'xnQsjsdp' value = 'd18899f8757131b85513d365ff45d8a3ddbc65dafaf945cdc97874b9c732ad10'>
+			<form id = 'webform6976070000010662011' action = 'https://crm.zoho.com/crm/WebToLeadForm' name = WebToLeads6976070000010662011 method = 'POST' onSubmit = 'javascript:document.charset="UTF-8"; return checkMandatory6976070000010662011()' accept-charset = 'UTF-8'>
+				<input type = 'text' style = 'display:none;' name = 'xnQsjsdp' value = '6124bbb86e18c0049e7d889f80d3643dd6697552429e288f1d72ac96c0f5e2d4'>
 				</input>
 				<input type = 'hidden' name = 'zc_gad' id = 'zc_gad' value = ''>
 				</input>
-				<input type = 'text' style = 'display:none;' name = 'xmIwtLD' value = '98a6183b6cda81d54c0e8f744d85c70d6c3e80b8b63484449a6e5743df07cf9de6504a9bf46d8df246d85ccbeef4ef29'>
+				<input type = 'text' style = 'display:none;' name = 'xmIwtLD' value = '1644d8aac4efbbdfe9046ef75acfef730b37bc6dd683860458ffea70dcac98a3159d0c12a16c06e2b4fa50a6e458ad41'>
 				</input>
 				<input type = 'text' style = 'display:none;' name = 'actionType' value = 'TGVhZHM='>
 				</input>
@@ -233,6 +233,7 @@
 					}
 					}
 				</style>
+				<div class = 'zcwf_title' style = 'max-width: 600px;color: black; font-family:Arial;'>Home</div>
 				<div class = 'zcwf_row'>
 					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
 						<label for = 'First_Name'>First Name</label>
@@ -259,17 +260,6 @@
 				</div>
 				<div class = 'zcwf_row'>
 					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
-						<label for = 'Email'>Email</label>
-					</div>
-					<div class = 'zcwf_col_fld'>
-						<input type = 'text' ftype = 'email' autocomplete = 'false' id = 'Email' aria-required = 'false' aria-label = 'Email' name = 'Email' aria-valuemax = '100' crmlabel = '' maxlength = '100'>
-						</input>
-						<div class = 'zcwf_col_help'>
-						</div>
-					</div>
-				</div>
-				<div class = 'zcwf_row'>
-					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
 						<label for = 'Phone'>Phone</label>
 					</div>
 					<div class = 'zcwf_col_fld'>
@@ -281,10 +271,34 @@
 				</div>
 				<div class = 'zcwf_row'>
 					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
+						<label for = 'Email'>Email</label>
+					</div>
+					<div class = 'zcwf_col_fld'>
+						<input type = 'text' ftype = 'email' autocomplete = 'false' id = 'Email' aria-required = 'false' aria-label = 'Email' name = 'Email' aria-valuemax = '100' crmlabel = '' maxlength = '100'>
+						</input>
+						<div class = 'zcwf_col_help'>
+						</div>
+					</div>
+				</div>
+				<div class = 'zcwf_row'>
+					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
+						<label for = 'Company'>Company
+							<span style = 'color:red;'>*</span>
+						</label>
+					</div>
+					<div class = 'zcwf_col_fld'>
+						<input type = 'text' id = 'Company' aria-required = 'true' aria-label = 'Company' name = 'Company' aria-valuemax = '200' maxlength = '200'>
+						</input>
+						<div class = 'zcwf_col_help'>
+						</div>
+					</div>
+				</div>
+				<div class = 'zcwf_row'>
+					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
 						<label for = 'Industry'>Industry</label>
 					</div>
 					<div class = 'zcwf_col_fld'>
-						<select class = 'zcwf_col_fld_slt' role = 'combobox' aria-expanded = 'false' aria-haspopup = 'listbox' id = 'Industry'onChange='addAriaSelected6976070000010324261()' aria-required = 'false' aria-label = 'Industry' name = 'Industry'>
+						<select class = 'zcwf_col_fld_slt' role = 'combobox' aria-expanded = 'false' aria-haspopup = 'listbox' id = 'Industry'onChange='addAriaSelected6976070000010662011()' aria-required = 'false' aria-label = 'Industry' name = 'Industry'>
 							<option value = '-None-'>-None-</option>
 							<option value = 'General'>General</option>
 							<option value = 'Healthcare'>Healthcare</option>
@@ -302,7 +316,7 @@
 						<label for = 'LEADCF7'>Source Page</label>
 					</div>
 					<div class = 'zcwf_col_fld'>
-						<select class = 'zcwf_col_fld_slt' role = 'combobox' aria-expanded = 'false' aria-haspopup = 'listbox' id = 'LEADCF7'onChange='addAriaSelected6976070000010324261()' aria-required = 'false' aria-label = 'LEADCF7' name = 'LEADCF7'>
+						<select class = 'zcwf_col_fld_slt' role = 'combobox' aria-expanded = 'false' aria-haspopup = 'listbox' id = 'LEADCF7'onChange='addAriaSelected6976070000010662011()' aria-required = 'false' aria-label = 'LEADCF7' name = 'LEADCF7'>
 							<option value = '-None-'>-None-</option>
 							<option selected value = 'Home'>Home</option>
 							<option value = 'Healthcare&#x20;Page'>Healthcare Page</option>
@@ -325,7 +339,7 @@
 							</div>
 						</div>
 						<script>
-							function addAriaSelected6976070000010324261(){
+							function addAriaSelected6976070000010662011(){
 								var optionElem = event.target;
 								var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
 								if (previousSelectedOption) {
@@ -333,8 +347,8 @@
 								}
 								optionElem.querySelectorAll('option') [optionElem.selectedIndex] .ariaSelected = 'true';
 							}
-							function validateEmail6976070000010324261(){
-								var form = document.forms['WebToLeads6976070000010324261'];
+							function validateEmail6976070000010662011(){
+								var form = document.forms['WebToLeads6976070000010662011'];
 								var emailFld = form.querySelectorAll('[ftype=email]');
 								var i;
 								for(i = 0; i < emailFld.length; i++ ) {
@@ -351,11 +365,11 @@
 								}
 								return true;
 							}
-							function checkMandatory6976070000010324261(){
-								var mndFileds = new Array('Last Name');
-								var fldLangVal = new Array('Last\x20Name');
+							function checkMandatory6976070000010662011(){
+								var mndFileds = new Array('Company', 'Last Name');
+								var fldLangVal = new Array('Company', 'Last\x20Name');
 								for (i = 0; i < mndFileds.length; i++ ) {
-									var fieldObj = document.forms['WebToLeads6976070000010324261'] [mndFileds[i]];
+									var fieldObj = document.forms['WebToLeads6976070000010662011'] [mndFileds[i]];
 									if (fieldObj) {
 										if(((fieldObj.value) .replace (/^\s+|\s+$/g,'') ) .length == 0) {
 											if (fieldObj.type == 'file') {
@@ -386,12 +400,12 @@
 										} catch (e){}
 									}
 								}
-								if ( !validateEmail6976070000010324261 () ) {
+								if ( !validateEmail6976070000010662011 () ) {
 									return false;
 								}
 								var urlparams = new URLSearchParams(window.location.search);
 								if (urlparams.has ('service') && (urlparams.get ('service') === 'smarturl') ) {
-									var webform = document.getElementById('webform6976070000010324261');
+									var webform = document.getElementById('webform6976070000010662011');
 									var service = urlparams.get('service');
 									var smarturlfield = document.createElement('input');
 									smarturlfield.setAttribute('type', 'hidden');
@@ -401,7 +415,7 @@
 								}
 								document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
 							}
-							function tooltipShow6976070000010324261(el){
+							function tooltipShow6976070000010662011(el){
 								var tooltip = el.nextElementSibling;
 								var tooltipDisplay = tooltip.style.display;
 								if (tooltipDisplay == 'none') {
@@ -416,7 +430,7 @@
 							}
 						</script>
 						<!-- Do not remove this --- Analytics Tracking code starts -->
-						<script id = 'wf_anal' src = 'https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=286c110dc1540095fcf53d3c52518a0ef345977d7172a02d27efd8836b61bc4d02ab3599af7f3c64e1db7e71cb67d2b1gidad6617e7745e6bc8be8620da0dea1120af1d8a9098d725f4cc64f86c0a56e0a0gid54d95140fd77eb4672fafb6158173147cac8b2d0c057509143f3ad58c8fc310agid064a55e4f56cc68fe391b642a91ab61f6739a13e7ba48ff757024d25d6f7fca1&tw=b1a1092228094c11eb163d2f74685cbb82b14f2b1b9983bb24df72c10c107d15'>
+						<script id = 'wf_anal' src = 'https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=61ae54f3614d46103b75a360b1a9db68fb0618deef9502d48390240a53531254b7fa8949865fe704789f655853a895a1gid7ad5caacb896cbd9ed0b6175b5a8a90224f3472858bb822783499b4dd48d9c72gid21b469faad5017cd5404636d244106e360ba7206d2c7c9bc86301a4df7cbf0ebgid1e95aa92d6508862a8cc37554a0b09821d27405f3b8ecac5d0e31ecdf4e309b7&tw=29f0754f9674c1d44b5a1aa8957d42d23f04dc56a9c2f87534eebd104c3bd0a2'>
 					</script>
 					<!-- Do not remove this --- Analytics Tracking code ends. -->
 				</form>
