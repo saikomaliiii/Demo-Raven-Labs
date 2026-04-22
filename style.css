@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #020617;
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
   color: white;
 }
 
@@ -103,8 +103,7 @@ nav {
 .hero2,
 .grid-section,
 .split {
-  max-width: 1200px;
-  margin: auto;
+  background: transparent;
 }
 
 /* ===== HEALTHCARE HERO ===== */
@@ -213,4 +212,14 @@ footer {
   text-align: center;
   padding: 40px;
   color: #94a3b8;
+}
+
+.left p,
+.grid-section p {
+  color: #e0e7ff;
+}
+
+.split .right #crmWebToEntityForm {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
 }
