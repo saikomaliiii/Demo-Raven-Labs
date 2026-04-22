@@ -165,3 +165,72 @@ footer {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+/* ===== ZOHO FORM ALIGN FIX ===== */
+
+.right #crmWebToEntityForm {
+  background: white;
+  color: #111;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+/* remove Zoho float layout */
+.zcwf_col_lab,
+.zcwf_col_fld {
+  float: none !important;
+  width: 100% !important;
+}
+
+/* spacing */
+.zcwf_row {
+  margin-bottom: 15px;
+}
+
+/* labels */
+.zcwf_col_lab label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* inputs */
+.zcwf_col_fld input,
+.zcwf_col_fld select {
+  width: 100% !important;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* focus effect (premium feel) */
+.zcwf_col_fld input:focus,
+.zcwf_col_fld select:focus {
+  border-color: #6d28d9;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(109,40,217,0.1);
+}
+
+/* submit button */
+.formsubmit {
+  width: 100% !important;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* reset button */
+input[type="reset"] {
+  margin-top: 10px;
+  background: #e5e7eb;
+  color: #111;
+}
