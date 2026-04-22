@@ -1,16 +1,201 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Healthcare</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Manufacturing</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f7;
+      color: #111;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: white;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    /* HERO */
+    .hero2 {
+      padding: 80px;
+      background: linear-gradient(135deg, #6d28d9, #7c3aed);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero-content h1 {
+      font-size: 56px;
+      margin: 10px 0;
+    }
+
+    .hero-content p {
+      color: #e0e7ff;
+      font-size: 18px;
+    }
+
+    .tag {
+      background: rgba(255,255,255,0.2);
+      padding: 8px 15px;
+      border-radius: 20px;
+    }
+
+    .badges span {
+      background: rgba(255,255,255,0.2);
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-right: 10px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    /* GRID */
+    .grid-section {
+      padding: 80px;
+      text-align: center;
+    }
+
+    .grid-section h2 span {
+      color: #6d28d9;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    /* SPLIT */
+    .split {
+      display: flex;
+      gap: 60px;
+      padding: 80px;
+      align-items: center;
+    }
+
+    .left {
+      width: 50%;
+    }
+
+    .why-title {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .why-title span {
+      color: #6d28d9;
+    }
+
+    .why-desc {
+      color: #6b7280;
+      margin-bottom: 25px;
+    }
+
+    .why-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .why-list li {
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+    }
+
+    .why-list li::before {
+      content: "✔";
+      color: #6d28d9;
+      margin-right: 10px;
+      background: #ede9fe;
+      border-radius: 50%;
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+
+    .right {
+      width: 50%;
+    }
+
+    /* ZOHO FORM FIX */
+    #crmWebToEntityForm {
+      background: white !important;
+      padding: 30px !important;
+      border-radius: 20px !important;
+      box-shadow: 0 20px 60px rgba(109, 40, 217, 0.15) !important;
+    }
+
+    #crmWebToEntityForm .zcwf_col_lab,
+    #crmWebToEntityForm .zcwf_col_fld {
+      float: none !important;
+      width: 100% !important;
+    }
+
+    #crmWebToEntityForm .zcwf_row {
+      margin-bottom: 15px;
+    }
+
+    #crmWebToEntityForm label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    #crmWebToEntityForm input,
+    #crmWebToEntityForm textarea {
+      width: 100% !important;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      background: #f9fafb;
+    }
+
+    #crmWebToEntityForm input:focus,
+    #crmWebToEntityForm textarea:focus {
+      border-color: #6d28d9;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(109,40,217,0.2);
+    }
+
+    #crmWebToEntityForm .formsubmit {
+      width: 100% !important;
+      padding: 14px !important;
+      border-radius: 30px !important;
+      border: none !important;
+      background: linear-gradient(135deg, #6d28d9, #7c3aed) !important;
+      color: white !important;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+  </style>
 </head>
+
 <body>
 
 <nav>
   <div class="logo">
     <img src="Logo-Theme-colors.webp">
   </div>
-  <ul class="nav-links">
+  <ul>
     <li><a href="index.html">Home</a></li>
   </ul>
 </nav>
@@ -21,7 +206,8 @@
     <span class="tag">Manufacturing Solutions</span>
     <h1>Industry 4.0 Smart Manufacturing</h1>
     <p>
-      Transform your manufacturing operations with cutting-edge automation, IoT integration, and data-driven insights that drive efficiency and profitability.
+      Transform your manufacturing operations with cutting-edge automation,
+      IoT integration, and data-driven insights.
     </p>
 
     <div class="badges">
@@ -32,84 +218,50 @@
   </div>
 </section>
 
-<!-- SERVICES GRID -->
+<!-- GRID -->
 <section class="grid-section">
-  <h2>End-to-End Manufacturing<span>Solutions</span></h2>
-  <p>From shop floor automation to enterprise analytics, we deliver integrated solutions for modern manufacturing</p>
+  <h2>End-to-End Manufacturing <span>Solutions</span></h2>
 
   <div class="grid">
-    <div class="box">
-      <h3>Smart Automation</h3>
-      <p>Automate repetitive tasks and optimize production workflows with intelligent systems.</p>
-    </div>
-
-    <div class="box">
-      <h3>Predictive Maintenance</h3>
-      <p>AI-powered analytics to predict equipment failures before they happen.</p>
-    </div>
-
-    <div class="box">
-      <h3>Inventory Management</h3>
-      <p>Real-time tracking and automated reordering to optimize your supply chain.</p>
-    </div>
-
-    <div class="box">
-      <h3>Quality Control</h3>
-      <p>Computer vision and IoT sensors for consistent product quality monitoring.</p>
-    </div>
-
-    <div class="box">
-      <h3>Production Scheduling</h3>
-      <p>Dynamic scheduling tools that maximize throughput and minimize downtime.</p>
-    </div>
-
-    <div class="box">
-      <h3>ERP Integration</h3>
-      <p>Seamless integration with existing ERP systems for unified operations.</p>
-    </div>
+    <div class="box"><h3>Smart Automation</h3></div>
+    <div class="box"><h3>Predictive Maintenance</h3></div>
+    <div class="box"><h3>Inventory Management</h3></div>
+    <div class="box"><h3>Quality Control</h3></div>
+    <div class="box"><h3>Production Scheduling</h3></div>
+    <div class="box"><h3>ERP Integration</h3></div>
   </div>
 </section>
 
-<!-- SPLIT SECTION -->
+<!-- SPLIT -->
 <section class="split">
-  <div class="left">
-    <p>
-Our manufacturing solutions are designed to optimize every aspect of your production process, from raw materials to finished products.
-</p>
 
-<ul>
-  <li>Increase production efficiency by 35%</li>
-  <li>Reduce equipment downtime by 50%</li>
-  <li>Real-time visibility across all operations</li>
-  <li>IoT sensor integration</li>
-  <li>Custom dashboards and reporting</li>
-  <li>Scalable solutions for any facility size</li>
-</ul>
+  <div class="left">
+    <h2 class="why-title">
+      Why Manufacturing Companies Choose <span>Raven Labs</span>
+    </h2>
+
+    <p class="why-desc">
+      Our solutions optimize production efficiency, reduce downtime,
+      and provide real-time visibility across operations.
+    </p>
+
+    <ul class="why-list">
+      <li>Increase production efficiency by 35%</li>
+      <li>Reduce downtime by 50%</li>
+      <li>Real-time visibility</li>
+      <li>IoT integration</li>
+      <li>Custom dashboards</li>
+      <li>Scalable solutions</li>
+    </ul>
   </div>
 
   <div class="right">
-  <h2>Get Your Free Assessment</h2>
 
-  <form action="https://crm.zoho.com/crm/WebToLeadForm" method="POST">
+    <!-- PASTE YOUR ZOHO FORM HERE -->
+    <!-- KEEP IT SAME (no edits needed) -->
 
-    <!-- Required hidden Zoho fields -->
-    <input type="hidden" name="xnQsjsdp" value="db2260206803ef1fcd9d785a46fc8fa659cb2133248b9c1e89c86f2e33380ce9">
-    <input type="hidden" name="xmIwtLD" value="39705568a4585faf029739a304113435be3db4a44cf0994eb1c1021a14dc2e53a731774f055adecc1c6e28cbda88206e">
-    <input type="hidden" name="actionType" value="TGVhZHM=">
+  </div>
 
-    <!-- 🔥 THIS IS YOUR SERVICE FIELD -->
-    <input type="hidden" name="Service" value="Manufacturing">
-
-    <!-- User fields -->
-    <input name="First Name" placeholder="Full Name">
-    <input name="Email" placeholder="Email">
-    <input name="Phone" placeholder="Phone">
-    <textarea name="Description" placeholder="Your requirement"></textarea>
-
-    <button type="submit">Submit</button>
-
-  </form>
-</div>
 </section>
 
 </body>
