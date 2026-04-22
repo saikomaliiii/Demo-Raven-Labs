@@ -103,7 +103,8 @@ nav {
 .hero2,
 .grid-section,
 .split {
-  background: transparent;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* ===== HEALTHCARE HERO ===== */
@@ -212,14 +213,4 @@ footer {
   text-align: center;
   padding: 40px;
   color: #94a3b8;
-}
-
-.left p,
-.grid-section p {
-  color: #e0e7ff;
-}
-
-.split .right #crmWebToEntityForm {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
 }
