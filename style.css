@@ -326,25 +326,36 @@ nav {
 
 .split {
   display: flex;
-  align-items: center;   /* 🔥 THIS FIXES VERTICAL ALIGN */
+  align-items: center;
   justify-content: space-between;
-  padding: 100px 20px;
   gap: 60px;
+
+  min-height: 80vh;   /* 🔥 THIS IS THE KEY FIX */
+  padding: 60px 20px;
 }
 
 .left {
   width: 50%;
   max-width: 550px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* 🔥 centers content vertically */
 }
 
 .right {
   width: 50%;
+
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  /* 🔥 aligns form with left content */
 }
 
 .right #crmWebToEntityForm {
   width: 100%;
   max-width: 400px;
+}
+
+.right #crmWebToEntityForm {
+  max-width: 380px;
 }
